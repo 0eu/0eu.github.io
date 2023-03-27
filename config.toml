@@ -1,0 +1,29 @@
+baseURL = 'https://blog.postnov.dev'
+languageCode = 'en-us'
+title = "Evgeny's Blog"
+theme = "paper"
+paginate = 15
+enableEmoji = true
+
+[params]
+  # linen, wheat, gray, light
+  color = 'linen'
+  github = '0eu' 
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
